@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
+
+  # respond to http://localhost:3000/about
+  get :about, to: 'pages#about'
+  # VERB page_name, to: 'controller#action'
+
+  get :contacts, to: 'pages#contacts'
 end
